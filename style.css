@@ -59,7 +59,7 @@ main{
 
 .hero{
     width: 85%;
-    min-height: 100svh;
+    height: 100svh;
     margin-inline: auto;
     margin-top: 130px;
 }
