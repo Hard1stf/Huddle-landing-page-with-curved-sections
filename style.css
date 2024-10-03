@@ -89,7 +89,7 @@ h1{
     font-family: var(--body-font);
     color: var(--Very-Dark-Cyan);
     padding-bottom: 40px;
-    /* padding-inline: 20px; */
+    padding-inline: 28px;
 }
 
 .hero-button{
@@ -160,16 +160,120 @@ h1{
     margin-bottom: -4px;
 }
 
-.curved-mobile-1{
+.curved-mobile{
     width: 100%;
 }
 
 .grow{
     background-color: var(--Very-Pale-Blue);
-    padding-inline: 1rem;
-    padding-block: 5rem;
 }
 
-.grow img{
+.same{
+    padding-inline: 1rem;
+    padding-block: 5rem;
+    color: var(--Very-Dark-Cyan);
+}
+
+.same > img{
     width: 80%;
+    padding-bottom: 48px;
+}
+
+.same h2{
+    font-family: var(--heading-font);
+    padding-bottom: 1rem;
+}
+
+.same p{
+    font-family: var(--body-font);
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.flowing{
+    background-color: white;
+}
+
+.user{
+    background-color: var(--Very-Pale-Blue);
+}
+
+
+.reminder{
+    margin: 0 0 8rem 0;
+}
+
+.reminder .lower-heading{
+    padding-inline: 2rem;
+}
+
+.reminder .lower-heading h2{
+    font-family: var(--heading-font);
+    color: var(--Very-Dark-Cyan);
+    font-size: 1.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.footer-content{
+    background-color: var(--Very-Dark-Cyan);
+    color: var(--Very-Pale-Blue);
+    display: grid;
+    grid-template-areas: 
+    'newsletter'
+    'contact'
+    'social'
+    ;
+    padding-bottom: 7rem;
+}
+
+.newsletter{
+    padding-inline: 2.1rem;
+    padding-block: 4rem;
+    font-family: var(--heading-font);
+    text-align: left;
+    grid-area: newsletter;
+}
+
+
+.newsletter h2{
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.newsletter p{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: var(--body-font);
+    padding-bottom: 1.5rem;
+}
+
+.newsletter input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 2rem;
+    font-size: 14px;
+    padding-inline: 10px;
+    margin-bottom: 1rem;
+}
+
+.newsletter input:focus-visible {
+    outline: none;
+}
+
+.newsletter button{
+    display: block;
+    float: right;
+    background-color: var(--pink);
+    color: var(--Very-Pale-Blue);
+    font-family: var(--body-font);
+    font-size: 13px;
+    font-weight: 500;
+    padding-inline: 2.1rem;
+    padding-block: 13px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
 }
