@@ -1,4 +1,4 @@
-:root{
+:root {
     /* primary colors  */
     --pink: hsl(322, 100%, 66%);
     --Light-Pink: hsl(321, 100%, 78%);
@@ -12,19 +12,19 @@
 }
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100svh;
     background-color: white;
     text-align: center;
 }
 
-.top-heading{
+.top-heading {
     background-color: transparent;
     backdrop-filter: blur(15px);
     width: 100%;
@@ -37,12 +37,12 @@ body{
     top: 0px;
 }
 
-.top-heading img{
+.top-heading img {
     width: 125px;
     height: 23px;
 }
 
-.top-heading button{
+.top-heading button {
     background-color: transparent;
     color: var(--Light-Pink);
     border-radius: 40px;
@@ -55,7 +55,7 @@ body{
     box-shadow: 0px 0px 28px 2px hsl(321deg 100% 78% / 36%);
 }
 
-main{
+main {
     width: 100%;
     height: max-content;
     margin-top: 140px;
@@ -63,11 +63,11 @@ main{
     /* padding-inline: 20px; */
 }
 
-.hero{
+.hero {
     margin-inline: auto;
 }
 
-.hero-content{
+.hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,7 +75,7 @@ main{
     text-align: center;
 }
 
-h1{
+h1 {
     color: var(--Very-Dark-Cyan);
     font-family: var(--heading-font);
     padding-inline: 8px;
@@ -83,7 +83,7 @@ h1{
 }
 
 
-.content{
+.content {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -93,7 +93,7 @@ h1{
     padding-inline: 28px;
 }
 
-.hero-button{
+.hero-button {
     width: fit-content;
     background-color: var(--pink);
     color: var(--Very-Pale-Blue);
@@ -106,149 +106,159 @@ h1{
     cursor: pointer;
 }
 
-.hero-content .multiple-screen{
+.hero-content .multiple-screen {
     width: 90%;
     padding-top: 50px;
 }
 
-.user-numbers{
+.user-numbers {
     margin: 130px 0 0;
     width: 50%;
     color: var(--Very-Dark-Cyan);
     font-family: var(--heading-font);
 }
 
-.numbers{
+.numbers {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.numbers .on-number{
+.numbers .on-number {
     width: 28px;
     margin-bottom: -10px;
 }
 
-.numbers .number{
+.numbers .number {
     font-size: 3.8rem;
     font-weight: 600;
 }
 
-.numbers .text{
+.numbers .text {
     font-size: 13px;
     font-weight: 600;
-    color:  hsl(192deg 100% 9% / 58%);
+    color: hsl(192deg 100% 9% / 58%);
 
 }
 
-.messages{
+.messages {
     margin-top: 80px;
 }
 
-.messages .text{
+.messages .text {
     padding-inline: 40px;
 }
 
-.main-content{
+.main-content {
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     /* gap: 20px; */
 }
 
-.curved-design-top{
+.curved-design-top {
     width: 100%;
     margin-bottom: -4px;
 }
 
-.curved-mobile{
+.curved-mobile {
     width: 100%;
 }
 
-.grow{
+.grow {
     background-color: var(--Very-Pale-Blue);
 }
 
-.same{
+.same {
     padding-inline: 1rem;
     padding-block: 5rem;
     color: var(--Very-Dark-Cyan);
 }
 
-.same > img{
+.same>img {
     width: 80%;
     padding-bottom: 48px;
 }
 
-.same h2{
+.same h2 {
     font-family: var(--heading-font);
     padding-bottom: 1rem;
 }
 
-.same p{
+.same p {
     font-family: var(--body-font);
     line-height: 24px;
     font-size: 15px;
 }
 
-.flowing{
+.flowing {
     background-color: white;
 }
 
-.user{
+.user {
     background-color: var(--Very-Pale-Blue);
 }
 
 
-.reminder{
+.reminder {
     margin: 0 0 8rem 0;
 }
 
-.reminder .lower-heading{
+.reminder .lower-heading {
     padding-inline: 2rem;
 }
 
-.reminder .lower-heading h2{
+.reminder .lower-heading h2 {
     font-family: var(--heading-font);
     color: var(--Very-Dark-Cyan);
     font-size: 1.5rem;
     padding-bottom: 2.5rem;
 }
 
-.footer-content{
+footer {
     background-color: var(--Very-Dark-Cyan);
-    color: var(--Very-Pale-Blue);
-    display: grid;
-    grid-template-areas: 
-    'newsletter'
-    'contact'
-    'social'
-    ;
-    padding-bottom: 7rem;
+    padding-inline: 1rem;
+    padding-block: 4rem;
 }
 
-.newsletter{
-    padding-inline: 2.1rem;
-    padding-block: 4rem;
-    font-family: var(--heading-font);
+footer p {
+    font-size: 14px;
+    font-family: var(--body-font);
+    color: var(--Very-Pale-Blue);
+    line-height: 24px;
+    word-spacing: 2px;
+}
+
+.footer-content {
+    color: var(--Very-Pale-Blue);
+    display: grid;
+    grid-template-areas:
+        'newsletter'
+        'contact'
+        'social'
+    ;
+    padding-bottom: 7rem;
+    margin-inline: auto;
+}
+
+.newsletter {
+    padding-bottom: 4rem;
     text-align: left;
     grid-area: newsletter;
 }
 
-.newsletter h2{
+.newsletter h2 {
     text-transform: uppercase;
+    font-family: var(--heading-font);
     font-weight: 500;
     padding-bottom: 1rem;
 }
 
-.newsletter p{
-    font-size: 14px;
-    line-height: 24px;
-    font-family: var(--body-font);
+.newsletter p {
     padding-bottom: 1.5rem;
 }
 
-.newsletter input{
+.newsletter input {
     display: block;
     width: 100%;
     border: none;
@@ -263,7 +273,7 @@ h1{
     outline: none;
 }
 
-.newsletter button{
+.newsletter button {
     display: block;
     float: right;
     background-color: var(--pink);
@@ -276,4 +286,53 @@ h1{
     border: none;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-areas:
+        'logo logo'
+        'info info'
+        'p-logo num'
+        'm-logo e-id'
+    ;
+    /* gap: 20px; */
+    padding-bottom: 4rem;
+    text-align: left;
+    font-family: var(--body-font);
+}
+
+.contact-info .footer-logo {
+    grid-area: logo;
+    width: 65%;
+    padding-bottom: 20px;
+}
+
+.contact-info .info {
+    grid-area: info;
+    width: 100%;
+    padding-bottom: 1.5rem;
+    word-spacing: 0px;
+    padding-bottom: 40px;
+}
+
+.contact-info .phone {
+    grid-area: p-logo;
+}
+
+.contact-info .num {
+    padding-bottom: 20px;
+    grid-area: num;
+}
+
+.contact-info .email{
+    grid-area: m-logo;
+}
+
+.contact-info .email-id{
+    grid-area: e-id;
+}
+
+.contact-info .contact {
+    margin-right: 7rem;
 }
