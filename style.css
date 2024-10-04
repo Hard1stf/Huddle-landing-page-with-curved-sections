@@ -11,6 +11,9 @@
     --body-font: "Open Sans", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 * {
     padding: 0;
@@ -153,7 +156,6 @@ h1 {
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
-    /* gap: 20px; */
 }
 
 .curved-design-top {
@@ -217,7 +219,7 @@ h1 {
 
 footer {
     background-color: var(--Very-Dark-Cyan);
-    padding-inline: 1rem;
+    padding-inline: 1.9rem;
     padding-block: 4rem;
 }
 
@@ -237,7 +239,7 @@ footer p {
         'contact'
         'social'
     ;
-    padding-bottom: 7rem;
+    padding-bottom: 1rem;
     margin-inline: auto;
 }
 
@@ -297,7 +299,7 @@ footer p {
         'm-logo e-id'
     ;
     /* gap: 20px; */
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
     text-align: left;
     font-family: var(--body-font);
 }
@@ -334,5 +336,22 @@ footer p {
 }
 
 .contact-info .contact {
-    margin-right: 7rem;
+    margin-right: 6rem;
+}
+
+.social-media{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-media a{
+    color: var(--Very-Pale-Blue);
+}
+
+.social-media svg{
+    font-size: 28px;
+    cursor: pointer;
 }
