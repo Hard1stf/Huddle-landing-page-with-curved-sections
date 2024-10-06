@@ -260,13 +260,15 @@ footer p {
 }
 
 .newsletter input {
+    color: var(--Very-Dark-Cyan);
     display: block;
     width: 100%;
     border: none;
     border-radius: 5px;
     height: 2rem;
-    font-size: 14px;
+    font-size: 21px;
     padding-inline: 10px;
+    padding-block: 1.5rem;
     margin-bottom: 1rem;
 }
 
@@ -280,7 +282,7 @@ footer p {
     background-color: var(--pink);
     color: var(--Very-Pale-Blue);
     font-family: var(--body-font);
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 500;
     padding-inline: 2.1rem;
     padding-block: 13px;
