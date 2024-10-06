@@ -11,7 +11,7 @@
     --body-font: "Open Sans", sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -235,9 +235,9 @@ footer p {
     margin-inline: auto;
     display: grid;
     grid-template-areas:
-    'newsletter'
-    'contact'
-    'social'
+        'newsletter'
+        'contact'
+        'social'
     ;
     overflow: hidden;
 }
@@ -293,10 +293,10 @@ footer p {
     width: 96%;
     display: grid;
     grid-template-areas:
-    'logo logo'
-    'info info'
-    'p-logo num'
-    'm-logo e-id'
+        'logo logo'
+        'info info'
+        'p-logo num'
+        'm-logo e-id'
     ;
     padding-bottom: 3rem;
     text-align: left;
@@ -326,15 +326,15 @@ footer p {
     grid-area: num;
 }
 
-.contact{
+.contact {
     text-align: left;
 }
 
-.contact-info .email{
+.contact-info .email {
     grid-area: m-logo;
 }
 
-.contact-info .email-id{
+.contact-info .email-id {
     grid-area: e-id;
 }
 
@@ -342,26 +342,22 @@ footer p {
     margin-right: 6rem;
 }
 
-.social-media{
+.social-media {
     grid-area: social;
-    /* width: 100%; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
-.social-media a{
+.social-media a {
+    font-size: 2.2rem;
     color: var(--Very-Pale-Blue);
 }
 
-.social-media svg{
-    font-size: 28px;
-    cursor: pointer;
+.social-media a:hover{
+    color: rgb( 34,211,238);
 }
 
-.logo{
-    width: 32px;
-}
 
 /* End of mobile screen size */
