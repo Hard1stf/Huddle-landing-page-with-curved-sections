@@ -42,7 +42,7 @@ body {
 
 .top-heading img {
     width: 125px;
-    height: 23px;
+    height: auto;
 }
 
 .top-heading button {
@@ -63,7 +63,6 @@ main {
     height: max-content;
     margin-top: 140px;
     margin-inline: auto;
-    /* padding-inline: 20px; */
 }
 
 .hero {
@@ -115,6 +114,10 @@ h1 {
 }
 
 .user-numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 130px 0 0;
     width: 50%;
     color: var(--Very-Dark-Cyan);
@@ -363,3 +366,118 @@ footer p {
 
 
 /* End of mobile screen size */
+
+/* tablet screen size */
+
+@media (min-width: 768px) {
+    /* style update */
+
+    .top-heading img {
+        width: 12rem;
+    }
+
+    .top-heading button {
+        font-size: 1rem;
+        padding-inline: 2rem;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+
+    h1 {
+        width: 50%;
+    }
+    
+    .content {
+        width: 85%;
+        font-size: 15px;
+    }
+
+    .hero-content .multiple-screen {
+        width: 75%;
+    }
+
+    .user-numbers {
+        flex-direction: row;
+        gap: 70px;
+        width: 80%;
+    }
+
+    .messages {
+        margin-top: 0;
+    }
+
+    .same>img {
+        width: 60%;
+    }
+
+    .same p {
+        text-align: center;
+        padding-inline: 10rem;
+    }
+
+    .reminder .lower-heading h2 {
+        font-size: 2.5rem;
+    }
+
+    .reminder .hero-button {
+        font-size: 1.2rem;
+        padding-inline: 6rem;
+        padding-block: 1.5rem;
+    }
+
+    .reminder .lower-heading {
+        padding-inline: 11rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    .newsletter {
+        display: grid;
+        grid-template-areas: 
+        'head head'
+        'info subscribe'
+        ;
+    }
+
+    .newsletter h2 {
+        grid-area: head;
+    }
+
+    .newsletter p {
+       grid-area: info;
+       padding-right: 2rem;
+    }
+
+    .input-button{
+        grid-area: subscribe;
+        width: 100%;
+    }
+
+    .newsletter input {
+        min-width: 390px;
+        font-size: 21px;
+    }
+
+    .contact-info {
+        width: 100%;
+        padding-bottom: 4rem;
+    }
+
+    .contact-info .contact {
+        margin-right:0;
+        min-width: 600px;
+    }
+
+    .social-media {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .social-media a {
+        font-size: 3rem;
+    }
+}
